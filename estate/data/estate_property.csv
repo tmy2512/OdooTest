@@ -1,0 +1,7 @@
+"id","name","description","postcode","date_availability","expected_price","selling_price","bedrooms","facades","garage","garden","garden_area","garden_orientation"
+test_1,John Doe,A lovely house in the suburbs,12345,2024-09-26,250000,240000,4,2,True,True,100,North
+test_2,Jane Smith,Modern apartment with sea view,54321,2024-10-01,300000,290000,3,1,False,False,0,South
+test_3,Emily Johnson,Spacious countryside home,67890,2024-08-15,500000,490000,5,4,True,True,200,East
+test_4,Michael Brown,City-center apartment,98765,2024-07-30,350000,345000,2,0,False,False,0,West
+test_5,Sarah Davis,Cozy cottage with a garden,11223,2024-09-10,200000,195000,3,1,True,True,150,South
+test_6,Sarah Davis,Cozy cottage with a garden,11223,2024-09-10,200000,195000,3,1,True,True,150,South
