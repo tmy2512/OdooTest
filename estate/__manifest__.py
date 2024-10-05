@@ -15,6 +15,7 @@
         'data/estate_property.csv',
         'views/product_views.xml',
         'views/estate_property_views.xml',
+        'views/estate_menus.xml',
     ],
     'demo': [
     ],

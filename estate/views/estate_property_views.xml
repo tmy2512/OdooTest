@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="estate_action" model="ir.actions.act_window">
-        <field name="name">estate.action</field>
+        <field name="name">Estate</field>
         <field name="res_model">estate_property</field>
         <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="estate_view_tree" model="ir.ui.view">
+        <field name="name">estate.tree</field>
+        <field name="model">estate_property</field>
+        <field name="arch" type="xml">
+            <tree string="Channel">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="postcode"/>
+                <field name="date_availability"/>
+            </tree>
+        </field>
+    </record>
+    <record id="estate_view_form" model="ir.ui.view">
+        <field name="name">estate form</field>
+        <field name="model">estate_property</field>
+        <field name="arch" type="xml">
+            <form string="Test">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="postcode"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" readonly="False"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_estate_search" model="ir.ui.view">
+        <field name="name">estate search</field>
+        <field name="model">estate_property</field>
+        <field name="arch" type="xml">
+            <search string="Delivery Carrier">
+                <field name="name" string="Name"/>
+                <field name="description"/>
+                <separator/>
+                <filter string="Description" name="descriptilson" domain="[('description', 'ilike', '%yeu%')]"/>
+<!--                <group expand="1" string="Group By">-->
+<!--                    <filter string="Provider" name="provider"-->
+<!--                            context="{'group_by':'delivery_type', 'residual_visible':True}"/>-->
+<!--                </group>-->
+            </search>
+        </field>
     </record>
 </odoo>
